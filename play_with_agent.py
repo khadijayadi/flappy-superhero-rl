@@ -8,7 +8,6 @@ import time
 with open("q_table.pkl", "rb") as f:
     q_table = pickle.load(f)
 
-# Create environment with rendering enabled
 env = FlappySuperheroEnv(render_enabled=True)
 
 # Number of episodes to watch
