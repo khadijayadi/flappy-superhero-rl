@@ -41,21 +41,18 @@ for episode in range(1, EPISODES + 1):
     total_reward = 0
 
     while not done:
-        # Init state in Q-table if not exists
+        
         if state not in q_table:
             q_table[state] = np.zeros(2)
-
-        # Epsilon-greedy action selection
+        
         if np.random.rand() < epsilon:
             action = np.random.choice(2)
         else:
             action = np.argmax(q_table[state])
 
-        # Environment step
         next_state, reward, done, _ = env.step(action)
         total_reward += reward
 
-        # Init next state
         if next_state not in q_table:
             q_table[next_state] = np.zeros(2)
 
@@ -78,7 +75,7 @@ for episode in range(1, EPISODES + 1):
     if episode % 100 == 0:
         print(f"Episode {episode}/{EPISODES} | Reward: {total_reward:.2f} | Epsilon: {epsilon:.3f}")
 
-    # Save checkpoint each 1000 episodes 
+    # Save checkpoint for each 1000 episodes 
     if episode % 1000 == 0:
         with open(q_table_path, "wb") as f:
             pickle.dump(q_table, f)
