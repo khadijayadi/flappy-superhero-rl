@@ -3,8 +3,8 @@
 This project combines game development and artificial intelligence.
 I built a custom Flappy Bird–style game called Flappy Superhero using Python and Pygame, and then trained an AI agent to play it using Q-learning (a reinforcement learning algorithm).
 
-🔗 Repository: Flappy Superhero RL
-🎥 Demo Video: Watch the AI Play
+> 🔗 Repository: flappy-superhero-rl
+> 🎥 Demo Video: Watch the AI Play
 
 # Project Highlights
 
@@ -38,20 +38,20 @@ Stay alive, pass pipes, and collect the special coin at 10 points to win.
 
 # How to Run ?
 
-# Clone the repository
+> Clone the repository
 git clone https://github.com/khadijayadi/flappy-superhero-rl.git
 cd flappy-superhero-rl
 
-# Install dependencies
+> Install dependencies
 pip install -r requirements.txt
 
-# Play the game manually
+> Play the game manually
 python flappy_superhero_env.py
 
-# Train the agent
+> Train the agent
 python q_learning_agent.py
 
-# Watch the trained agent play
+> Watch the trained agent play
 python play_with_agent.py
 
 
