@@ -3,8 +3,8 @@
 This project combines game development and artificial intelligence.
 I built a custom Flappy Bird–style game called Flappy Superhero using Python and Pygame, and then trained an AI agent to play it using Q-learning (a reinforcement learning algorithm).
 
-> 🔗 Repository: flappy-superhero-rl
-> 🎥 Demo Video: Watch the AI Play
+> - 🔗 Repository: flappy-superhero-rl
+> - 🎥 Demo Video: [Watch the AI Play](https://drive.google.com/file/d/1j5S8gz_D2ItfOuUHo4ZcQJMqoI10e1QS/view?usp=sharing)
 
 # Project Highlights
 
@@ -65,5 +65,5 @@ python play_with_agent.py
   
 - the plot_metrics.py : containts plots of the game's rewards and scores evolution , it shows how is the training process going .
 
-Run play_with_agent.py without running q_learning_agent.py to see the trained agent play the game using the saved Q-table. 
+- Run play_with_agent.py without running q_learning_agent.py to see the trained agent play the game using the saved Q-table. 
 
